@@ -13,15 +13,15 @@ namespace High_Low_Game
 
             int count = 0;
 
-            Console.WriteLine("player one, please enter to the number to be guessed by player 2");
+            Console.WriteLine("player one, please enter to the number to be guessed by player 2");//promt the user for input
 
-            int answer = Convert.ToInt32(Console.ReadLine());
+            int answer = Convert.ToInt32(Console.ReadLine());//assign user input to the new variable
 
             Console.WriteLine("ok player 2 its your turn");
 
             int guess = Convert.ToInt32(Console.ReadLine());
 
-            while (guess != answer)
+            while (guess != answer)//check if the answer matches the guess
                 {
                     if (guess > answer)
                     {
